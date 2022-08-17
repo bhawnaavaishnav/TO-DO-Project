@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Todo Project</title>
+</head>
+
+<body>
+    <h1>TO-DO LIST</h1>
+    <div class="container">
+        <div class="add_item">
+            ADD TASK
+            <div class="inS">
+                <input type="text" oninput="inputField()" id="inputScreen">
+                <button class="button" onclick="add()">Add</button>
+            </div>
+        </div>
+        <div class="item">
+            TO-DO
+            <hr>
+            <div class="bticons">
+                <div class="task_per">
+                    <p id="task" class="task"></p>
+                </div>
+                <div class="btn">
+                    <button class="bt" onclick="complete()">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </button>
+                    <button class="bt" onclick="del()">
+                        <i class="fa-solid fa-trash-can" class="icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="item" id="completed">
+            COMPLETED
+            <hr>
+            <div class="bticons">
+                <div>
+                    <p id="com"></p>
+                </div>
+                <div class="btnn">
+                    <button class="bt" onclick="dele()">
+                        <i class="fa-solid fa-trash-can" class="icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Todo.js"></script>
+
+</html>
